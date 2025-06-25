@@ -1,0 +1,110 @@
+/* CSS by Breyanna King*/
+/*Imported Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/*CSS Reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Root Variables */
+:root{
+    --midnight-blue: #1F2A44;
+    --olive-green: #76885B;
+    --champagne-gold: #E5C185;
+    --linen: #F8F4EC;
+    --dark-charcoal: #2B2B2B;
+    --soft-white: #FAF9F6;
+
+    --font-main: 'Playfair Display', serif;
+
+}
+
+/*Global Styles (mobile first/small) */
+body{
+    font-family:var(--font-main);
+    background-color: var(--soft-white);
+    color: var(--dark-charcoal);
+    padding: 1rem;
+}
+
+header{
+    background-color: var(--midnight-blue);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    background-color: #E5C185;
+    padding: 0.5rem;
+}
+nav a {
+    text-decoration: none;
+    color:var(--dark-charcoal)
+    font-weight: bold;
+}
+section{
+    margin-top: :2rem;
+}
+h1,h2,h3{
+    font-weight: 700;
+}
+article{
+    background-color: var(--linen);
+    padding: 1rem;
+    margin: 1rem 0;
+    border-left: 5px solid var(--olive-green);
+}
+figure{
+    margin: 1rem 0;
+    text-align: center;
+}
+button{
+    background-color: var(--olive-green);
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+footer{
+    background-color: var(--midnight-blue);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+/* Media Query (medium) */
+@media (min-width:600px){
+    body{
+        padding: 2rem;
+    }
+    figure{display:inline-block;
+        width: 48%;
+        vertical-align: top;}
+
+}
+/*Media Query(large)*/
+@media (min-width:900px) {
+    nav ul{
+        justify-content: flex-end;
+    }
+    article{
+        display: flex;
+        justify-content: space-between;
+        padding:2rem;
+    }
+}
+/*Media Query (x1) */
+@media (min-width:1200px) {
+    section {
+        max-width:1000px;
+        margin: 2rem auto;
+    }
+}
